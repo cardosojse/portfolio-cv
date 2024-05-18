@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+body{
+    background-color: #000000;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    padding: 1em 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+
+nav li + li{
+    margin-left: 1em;
+}
+
+nav li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    position: relative;
+}
+
+nav li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #FF0000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+}
+
+nav li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    color: #fff;
+}
+
+.header-text p{
+    font-size: 2rem;
+}
+
+.header-text h1{
+    font-size: 3.5rem;
+}
+
+.header-text span{
+    font-size: 3.5rem;
+    color: #FF0000;
+}
+
+#about{
+    padding: 5em 0;
+    background-color: #040303;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 1em;
+    background-color: #121212;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.subtitle{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 2em 0 1.25em;
+}
+
+.tab-links{
+    margin-right: 1.5em;
+    font-size: 1.125rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #FF0000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: .5s;
+}
+
+.tab-links.active-link::after{
+    width: 60%;
+}
+
+.tab-contents li{
+    list-style: none;
+    margin: .5em 0;
+}
+
+.tab-contents span{
+    color: #950101;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+#projects{
+    padding: 6em 0;
+    color: #ababab;
+}
+
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5em;
+    margin-top: 6em;
+}
+
+.projects-list div{
+    padding: 3em;
+    font-size: 1rem;
+    background-color: #121212;
+    border-radius: .5em;
+    transition: background .5s, transform .5s;
+}
+
+.projects-list div i{
+    font-size: 2rem;
+}
+
+.projects-list div h2{
+    font-size: 1.5rem;
+    margin: 1em 0 .75em;
+}
+
+.projects-list a{
+    text-decoration: none;
+    color: #fff;
+    font-size: .8rem;
+    margin-top: 2em;
+    display: inline-block;
+}
+
+.projects-list div:hover{
+    background-color: #FF0000;
+    transform: translateY(-10px);
+}
+
+#contact{
+    padding: 5em 0;
+    background-color: #040303;
+    color: #ababab;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 1.25em;
+}
+
+.contact-left p i{
+    color: #FF0000;
+    margin-right: .75em;
+    font-size: 1.25rem;
+}
+
+.social-icons{
+    margin-top: 2em;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: #ababab;
+    margin-right: 1em;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    transform: translateY(-5px);
+}
+
+.social-icons a i{
+    font-size: 2rem;
+}
+
+.social-icons a i:hover{
+    color: #FF0000;
+}
+
+.btn{
+    display: block;
+    width: fit-content;
+    margin-top: 2em;
+    padding: 1em 1.5em;
+    border: 1px solid #FF0000;
+    border-radius: 6px;
+    color: #ababab;
+    transition: .5s;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background: #FF0000;
+}
+
+.submit{
+    background-color: transparent;
+    cursor: pointer;
+    float: right;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 6px;
+}

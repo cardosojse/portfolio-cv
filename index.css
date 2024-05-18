@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.logo{
+    width: 36px;
+}
+
+.nav-link{
+    color: #FF0000;
+}
+
+.nav-link:hover{
+    color: #950101;
+}
+
+.img-container{
+    height: 500px;
+    width: 100%;
+    background: url(images/image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+
+.title, .title span{
+    font-size: 3.5rem;
+}
+
+.title span{
+    color: #FF0000;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+}
+
+#serviços{
+    padding: 5em 0;
+    color: #ababab;
+}
+
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5em;
+    margin-top: 3em;
+}
+
+.projects-list div{
+    padding: 3em;
+    font-size: 1rem;
+    background-color: #121212;
+    border-radius: .5em;
+    transition: background .5s, transform .5s;
+}
+
+.projects-list div i{
+    font-size: 2rem;
+}
+
+.projects-list div h2{
+    font-size: 1.5rem;
+    margin: 1em 0 .75em;
+}
+
+.projects-list a{
+    text-decoration: none;
+    color: #fff;
+    font-size: .8rem;
+    margin-top: 2em;
+    display: inline-block;
+}
+
+.projects-list div:hover{
+    background-color: #FF0000;
+    transform: translateY(-10px);
+}
+
+.btn{
+    display: block;
+    width: fit-content;
+    margin-top: 2em;
+    padding: 1em 1.5em;
+    border: 1px solid #FF0000;
+    border-radius: 6px;
+    color: #ababab;
+    transition: .5s;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background: #FF0000;
+}
+
+.img-container-2{
+    height: 500px;
+    width: 100%;
+    background: url(images/image-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#portfolio{
+    padding: 5em 0;
+    background-color: #040303;
+    color: #ababab;
+}
+
+#contact{
+    padding: 5em 0;
+    background-color: #040303;
+    color: #ababab;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 1.25em;
+}
+
+.contact-left p i{
+    color: #FF0000;
+    margin-right: .75em;
+    font-size: 1.25rem;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 6px;
+}
+
+.submit{
+    float: right;
+}
